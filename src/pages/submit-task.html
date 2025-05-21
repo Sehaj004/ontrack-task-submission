@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submit Task</title>
+</head>
+<body>
+    <form>
+        Student ID: <input type="text" id="studentId"><br><br>
+        Task File: <input type="file" id="taskFile"><br><br>
+        <button type="button" id="submitBtn" onclick="submitTask()">Submit</button>
+        <div id="successMessage" style="margin-top:10px;color:green;"></div>
+    </form>
+
+    <script>
+        function submitTask() {
+            const studentId = document.getElementById("studentId").value;
+            const taskFile = document.getElementById("taskFile").value;
+
+            if (studentId && taskFile) {
+                document.getElementById("successMessage").textContent = "Task submitted successfully!";
+            } else {
+                document.getElementById("successMessage").textContent = "Submission failed!";
+            }
+        }
+    </script>
+</body>
+</html>
