@@ -18,7 +18,7 @@ public class TaskSubmissionTest {
 
     
     
-    @Disabled("Disabled for CI environment")
+//    @Disabled("Disabled for CI environment")
     @Test
     public void testValidTaskSubmission() {
         driver.findElement(By.id("studentId")).sendKeys("12345");
