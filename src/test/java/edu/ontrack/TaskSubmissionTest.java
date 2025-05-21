@@ -16,7 +16,7 @@ public class TaskSubmissionTest {
         driver.navigate().to("file:////Users/anshpreetsingh/Downloads/java_projects/ontrack-task-submission/src/pages/submit-task.html"); 
     }
 
-    @Disabled("Disabled for CI environment")
+    @Disabled("Disabled for CI environment ")
     @Test
     public void testValidTaskSubmission() {
         driver.findElement(By.id("studentId")).sendKeys("12345");
