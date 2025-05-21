@@ -24,7 +24,8 @@ public class TaskSubmissionTest {
         driver.findElement(By.id("submitBtn")).click();
 
         WebElement message = driver.findElement(By.id("successMessage"));
-        assertEquals("Task submitted successfully!", message.getText());
+        assertEquals("This will fail", message.getText());
+
     }
 
     @AfterEach
